@@ -3,7 +3,7 @@ import unittest
 from converter import Converter
 
 
-class TestMain(unittest.TestCase):
+class TestConverter(unittest.TestCase):
     """Runs all the unit tests"""
 
     def setUp(self):

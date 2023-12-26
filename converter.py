@@ -43,10 +43,10 @@ class Converter:
 
     def convert_text(self, word: str) -> str:
         """
-        Converts the given word into morse code
-        {params} text: the word in English, this function expects only one word to be passed
-        in instead of an entire line.
-        {returns} The morse code version of the inputted word
+        Converts the given word into morse code\n
+        params - word: the word in English, this function expects only one word to be passed
+        in instead of an entire line.\n
+        returns - The morse code version of the inputted word
         """
         morse_code = [self.__reference[char.upper()] for char in word if char.isalnum()]
-        return "   ".join(morse_code)
+        return "   ".join(morse_code) # Seperates each letter by 3 spaces
